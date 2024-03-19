@@ -1,0 +1,47 @@
+
+
+
+VM基盤OS：
+
+- OS：WinSrv2016
+- IP：192.168.10.120
+- Usr：Administrator
+- Pwd：Tse!"#
+
+
+
+Brain OracleDBサーバー（VM）
+
+- OS：RHEL
+- IP：192.168.10.121
+- ユーザ：root／ brain-vir
+- ユーザ：oracle／orauser
+- ユーザ：ora011／ora011
+
+
+
+Brain WebAppサーバー（VM）
+
+- OS：RHEL
+- IP：192.168.10.122
+- ユーザ：root／brain-vir-2
+- ユーザ：oracle／orauser
+- ユーザ：ora011／ora011
+
+
+
+Oracleサービス情報
+
+- SERVICE_NAME： hccs.eg.jp.honda.com
+- HOST：192.168.10.121
+- Port：1521
+- USER：BRAIN
+- PASS：BRAIN
+
+
+
+BRAIN ログインURL：
+
+- [日本](http://192.168.10.122/brain/app/investigation.main)
+- [中国](http://192.168.10.122/chbrain/app/investigation.main)
+- [タイ](http://192.168.10.122/asbrain/app/investigation.main)

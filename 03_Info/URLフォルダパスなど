@@ -1,0 +1,38 @@
+
+
+cmd
+net use * /d /y
+net use \\192.168.10.46\work /user:work tse!"#
+
+■Orion
+http://orion.t.estrella.co.jp/TCAUTH.php
+■外部Orion
+http://60.43.43.200/mobile/TCLOGIN.php?URL=index.html
+■外部Aipo 社内Aipo
+http://60.43.43.200/　　http://192.168.15.3/
+---
+新人研修
+\\192.168.10.46\work\project\新人研修改革
+---
+鈴木さんのアカウントプロダクトキー
+PNV66-KDC82-3BC7H-72KY6-4M6BJPC修復後にNAS共有フォルダ接続で下記エラー
+このネットワークリソースを使用するアクセス許可がない可能性があります。アクセス許可があるかどうかこのサーバー管理者に問い合わせてください。組織のセキュリティポリシーによって非認証のゲストアクセスがブロックされているためこの共有フォルダーにアクセスできません
+└グループポリシーの設定Computer configuration\administrative templates\network\Lanman Workstation
+「安全でないゲスト ログオンを有効にする」→有効にする
+
+2020/04/06
+今使っているサーフェスは５？
+
+---
+tajiri tjrt98tse \\192.168.15.4\01 ティーエスイー\users\tajiri
+---
+googleDrive　工数管理
+https://drive.google.com/drive/folders/1CwLEpZcUfhq8O_8kuijswGv_Q78q0xTD?usp=sharing
+
+---
+VS2015 Pro プロダクトキー
+\\192.168.15.4\01 ティーエスイー\ISO Files\Visual Studio 2015 Professional
+
+
+
+

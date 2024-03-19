@@ -1,0 +1,22 @@
+DB-Container-Managerについて
+
+192.168.10.202
+にリモートデスクトップで入ればコンテナが立ってるPCには入れる
+---
+OS : Ubuntu Desktop 22.04 LTS 日本語Remix（64bit）
+Docker :  Docker 20.10.17
+CPU : 1CPU
+Memory : 8GB
+Storage : 100GB
+Network :
+  IP : 192.168.10.202 ※OS側で固定IP
+  Sub : 255.255.255.0
+  Default G/W : 192.168.10.1
+Host Name : docker
+OSアカウント :
+  ID : docker
+  Pass : P@ssw0rd
+リモートデスクトップ :
+  ID : docker
+  Pass : P@ssw0rd
+  ※Windowsのリモートデスクトップでアクセスできます。
