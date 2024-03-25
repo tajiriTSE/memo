@@ -1,5 +1,6 @@
 
-
+作業用GSS
+https://docs.google.com/spreadsheets/d/13hBTxNu83_HEMZgIcWdvSilPDgsrUqH9u5UaFEL4w-A/edit#gid=2056256081
 
 VM基盤OS：
 
