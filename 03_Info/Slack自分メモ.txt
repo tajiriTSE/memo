@@ -75,28 +75,9 @@ Brain　ホンダエンジニアリング統合
 処理対象データが格納されている記憶場所のアドレスが格納されている記憶場所のアドレス
 
 ---
-田尻 拓也  15:32
-新人研修フォルダ
-
-	\\192.168.10.46\work\project\新人研修改革
-
----
-田尻 拓也  15:34
-本田技研工業株式会社 四輪事業本部 ものづくりセンター 生産技術統括部
-
----
 田尻 拓也  18:53
 パブリックキー　ITニュース情報サイト
 https://www.publickey1.jp/ （編集済み） 
-
----
-田尻 拓也  13:22
-googleDrive 工数管理
-https://drive.google.com/drive/folders/1CwLEpZcUfhq8O_8kuijswGv_Q78q0xTD?usp=sharing
-
----
-田尻 拓也  09:08
-楡木さん　にれぎさん
 
 ---
 田尻 拓也  11:00
@@ -105,3 +86,19 @@ https://docs.google.com/spreadsheets/d/1hmq6vtW8SX9FicqndEPVGKLABCtwXIGOXpaKN6ix
 栃木Wifi
 estrella-nw
 PW:estrella!"#
+
+------------------------------------------------
+PC用: 
+ https://focus-u.net/focusu/login?_mode=1
+スマートフォン用： 
+ https://focus-u.net/sfocusu/login
+
+ ------------------------------------------------
+ git rebase master
+git pull --rebase origin master　リモートのブランチからリベースする
+git push --force-with-lease　リベースした後はローカルとリモートで当然差がある、GUI的にはなんか警告でる
+　└強制的にプッシュするコマンド
+------------------------------------------------
+見積もり　ガソリン代
+道のりを算出、ステップは14km/1L、1/14で1キロ当たりのガソリンL、道のり＊ガソリンL＊単価 
+
