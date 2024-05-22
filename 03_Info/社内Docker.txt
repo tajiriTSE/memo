@@ -1,3 +1,9 @@
+Ubuntuインストール　ARTEMISの環境構築
+user:tajiri
+pw:tajiri
+
+
+
 DB-Container-Managerについて
 
 192.168.10.202
