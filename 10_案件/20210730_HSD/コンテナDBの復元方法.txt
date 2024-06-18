@@ -1,0 +1,46 @@
+
+社内のDockerサーバ192.168.10.202にたてたSqlserverにbakファイルを渡して復元する方法
+
+## 事前準備
+sqlserverに対してコマンドで復元を実行するため、コマンドラインツールを用意しておく
+https://github.com/microsoft/go-sqlcmd/releases/tag/v1.6.0
+sqlcmd-v1.6.0-windows-x64.zip
+
+## 手順
+復元したいbakファイルを用意する
+Dockerサーバ192.168.10.202へリモートデスクトップでアクセスする
+  ID : docker
+  Pass : P@ssw0rd
+GUIのOSになっているので、bakファイルをコピペする
+ペースト先はどこでも良いが、パスを把握する必要がある
+次にDockerサーバ内にたててあるDockerコンテナへファイルをコピーする
+CUIツールを起動し、`docker ps -a`コマンドでコンテナの一覧を確認する
+対象のコンテナのIDを記録しておく
+下記コマンドでコピーする
+docker cp bakファイルパス コンテナID:コピー先パス
+例 'docker cp /home/hsd.bak c4885f9524dc:/tmp'
+自分のPCに戻り、sqlcmdでコンテナDBへログインする
+'sqlcmd -S 192.168.10.202 -U sa -P SQLServer1234'
+※復元を実行する権限を持ったユーザーでログインする
+下記コマンドで、bakファイル内の論理名を確認する
+`RESTORE FILELISTONLY FROM disk='/tmp/hsd.bak';`
+リストアコマンドを実行する
+※論理名内にバックアップ後のmdfとldfファイルを保存するパス情報を持っている
+　エクスポートした環境のパスが残っているため、バックアップ先のパスに変更する必要がある
+　WITH MOVEオプションで、mdfとldfファイルの保存先を指定する
+' restore database HSDS_DB_4 from disk="/tmp/hsd.bak"
+ WITH MOVE 'HSDS_DB_4' to '/tmp/HSDS_DB_4.mdf',
+ MOVE 'HSDS_DB_4_log' to '/tmp/HSDS_DB_4.ldf';'
+復元完了
+
+
+docker@docker:~$ docker cp /home/hsd.bak c4885f9524dc:/tmp
+lstat /home/hsd.bak: no such file or directory
+docker@docker:~$ ls /home
+docker
+docker@docker:~$ ls /home/docker
+docker.iml  pivot         テンプレート  ビデオ        公開
+go          snap          デスクトップ  ピクチャ
+hsd.bak     ダウンロード  ドキュメント  ミュージック
+docker@docker:~$ docker cp /home/docker/hsd.bak c4885f9524dc:/tmp
+docker@docker:~$ 
