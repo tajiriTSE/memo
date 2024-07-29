@@ -1,0 +1,11 @@
+yarn（npm）でインストールされたvueのバージョンの確認
+npm list vue
+添付1枚目のようにvueのバージョンが確認できる。
+nuxtを削除
+yarn remove nuxt
+nuxtをバージョン指定でインストール
+yarn add nuxt@3.11.2
+古いファイルが残ってるとよくないので削除
+（.nuxtフォルダと.node_modelsフォルダを削除）
+パッケージの更新
+yarn install
