@@ -18,7 +18,7 @@ CUIツールを起動し、`docker ps -a`コマンドでコンテナの一覧を
 対象のコンテナのIDを記録しておく
 下記コマンドでコピーする
 docker cp bakファイルパス コンテナID:コピー先パス
-例 'docker cp /home/hsd.bak c4885f9524dc:/tmp'
+例 'docker cp /home/docker/hsd.bak c4885f9524dc:/tmp'
 自分のPCに戻り、sqlcmdでコンテナDBへログインする
 'sqlcmd -S 192.168.10.202 -U sa -P SQLServer1234'
 ※復元を実行する権限を持ったユーザーでログインする
@@ -32,6 +32,17 @@ docker cp bakファイルパス コンテナID:コピー先パス
  WITH MOVE 'HSDS_DB_4' to '/tmp/HSDS_DB_4.mdf',
  MOVE 'HSDS_DB_4_log' to '/tmp/HSDS_DB_4.ldf';'
 復元完了
+
+
+-------------------------------------------------------
+デタッチ
+EXEC sp_detach_db @dbname = N'HSDS_DB_4';
+
+docker内のファイル操作
+docker container exec c4885f9524dc ls /tmp
+docker container exec c4885f9524dc rm /tmp/hsd.bak
+
+
 
 
 docker@docker:~$ docker cp /home/hsd.bak c4885f9524dc:/tmp
