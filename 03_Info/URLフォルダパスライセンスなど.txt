@@ -5,6 +5,12 @@ Spread For Windows Forms 7.0
 Spread For Windows Forms 10.0
 0653-2873-4968-3236-6452-0311
 
+KV-COM
+C:\00_Projects\■20220406_5-1(多層)自動硬化時間連携ソフト\■20220406_5-1(多層)自動硬化時間連携ソフト\Documents\KV-COMインストーラ
+
+ComponentOne2019v2
+C:\00_Projects\■20210426_大木伸銅_鋳造設備見える化\ComponentOne
+
 
 
 -------------------------------------------------------
