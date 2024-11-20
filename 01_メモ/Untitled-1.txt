@@ -162,6 +162,6 @@ editsetting/merge_images
 base.jpgに名前を変える、バッチ動かす
 フォルダ構成が作られる、中にマスターイメージが作られる
 
-
-
+■UnitSpace
+手塚さん経由で
 
