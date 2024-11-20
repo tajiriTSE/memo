@@ -81,8 +81,27 @@ FILE=TMMM_TTTT_OOO_CAMERA_STATION
 %はワイルドカード
 LTY3%_%_%_B5_02　B5がカメラ、０２が号機
 
+AIMING_IDの中にStationがいる、Aiming回数、カメラの情報が入っている
+
 feature_value
 
+X1Y1などはxmlからクロスポイントの設定
+
+LETのエイミングポイント、図のマーカーの従事の部分を４点
+
+全て％のファイル、サーバー側でNGが出ると止まっちゃうから、とりあえずNGを返すように入れている
+
+■設定ファイルを作る
+merge_image.bat、マスタイメージとフォルダ構成を作ってくれる
+data/editsetting/merge_images
+merge_imagesというフォルダが有る、画像をたくさん入れて
+どれを基準にするというのを決める、baseという名前の画像
+
+■作る順番
+master_image
+masking-area
+Unitspace
+feature_value
 
 
 
