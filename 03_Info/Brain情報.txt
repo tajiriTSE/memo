@@ -1,4 +1,23 @@
 
+サーバー：
+- OS：WinSrv2012
+- IP：192.168.10.120
+- Usr：Administrator
+- Pwd：Tse!"#
+
+http://192.168.10.120:7777/brain/investigation.main
+
+社内BrainDB
+192.168.10.120
+1521
+orcl.com
+BRAIN
+Brain123
+
+
+-------------------------------------------------------
+↓いままでの(～2024/12/20)
+
 作業用GSS
 https://docs.google.com/spreadsheets/d/13hBTxNu83_HEMZgIcWdvSilPDgsrUqH9u5UaFEL4w-A/edit#gid=2056256081
 
@@ -38,7 +57,6 @@ Oracleサービス情報
 - Port：1521
 - USER：BRAIN
 - PASS：BRAIN
-
 
 
 BRAIN ログインURL：
