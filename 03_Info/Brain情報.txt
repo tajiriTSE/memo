@@ -7,6 +7,10 @@
 
 http://192.168.10.120:7777/brain/investigation.main
 
+005568
+313214（斎藤 光二
+maintenance
+
 社内BrainDB
 192.168.10.120
 1521
